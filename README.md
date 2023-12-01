@@ -1,11 +1,11 @@
-# Laravel - Docker Repository
+# Laravel - Docker - Esewa Repository
 
 - PHP: 8.1
 - Laravel: 10.13.5
 - phpMyAdmin: 5.2.1
 - MariaDB: 11.0.2
 
-## Project Structure
+## Folder Structure
 
 The repository is structured as follows:
 
@@ -25,7 +25,7 @@ The repository is structured as follows:
 - The `docker/` directory contains subdirectories for Docker-related files, such as `mariadb/` for MariaDB configuration and `nginx/` for Nginx configuration.
 - The `docker-compose.yml` file is responsible for defining and orchestrating the Docker containers.
 
-## Getting Started
+## Let's Stat
 
 To run the project locally using Docker, follow these steps:
 

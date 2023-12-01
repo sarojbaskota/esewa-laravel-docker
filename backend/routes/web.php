@@ -1,7 +1,8 @@
 <?php
 
-use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\EsewaIntegration;
+use App\Http\Controllers\ProductController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,10 +19,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 // without package 
-
-// Route::post('/pay', [EsewaController::class, 'pay']);
-// Route::get('/success', [EsewaController::class, 'success']);
-// Route::get('/failure', [EsewaController::class, 'failed']);
+//new version 2023 v2
+Route::get('/test', [EsewaIntegration::class, 'index']);
+Route::get('/e-pay', [EsewaIntegration::class, 'pay']);
+Route::get('/e-success', [EsewaIntegration::class, 'eSuccess']);
+Route::get('/e-failure', [EsewaIntegration::class, 'eFailure']);
 
 // with package 
 
